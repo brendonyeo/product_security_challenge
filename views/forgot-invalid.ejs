@@ -1,0 +1,14 @@
+<form action="/users/forgot" method="POST">
+  <h2 class="text-center">Forgot Password?</h2>
+  <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+  <div class="form-group" style="text-align:center">
+    <p style="color:red;">Token expired or invalid.</p>
+  </div>
+  <div class="form-group">
+    <input id="email" type="text" class="form-control" placeholder="Email" required="required" name="email">
+  </div>
+  <div class="form-group">
+      <button type="submit" class="btn btn-primary btn-block">Reset Password</button>
+  </div>
+</form>
+<p class="text-center"><a href="http://localhost:5000/users/login">Login</a></p>

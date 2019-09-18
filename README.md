@@ -1,32 +1,38 @@
-# Zendesk Product Security
-### The Zendesk Product Security Challenge
+Below are the steps to setting up the authentication application:
 
-Hello friend,
+To run the executable files:
+1. Navigate to ./Executables
+2. Run the executable files for your system
+3. (If needed) Copy the relevant source files to the correct folder if needed.
+4. Browse to the address given below in your browser.
+=> http://localhost:5000/
+5. Voila! You can start using the application now.
 
-We are super excited that you want to be part of the Product Security team at Zendesk.
+To run the original files:
+1. Open command prompt (Windows) / terminal (MacOS)
+2. Check that node is installed. If node is not installed, you can download it here https://nodejs.org/en/download/ .
+=> node -v
+3. Install libraries used for the application
+=> npm i express express-ejs-layouts ejs express-session mongoose passport passport-local bcryptjs connect-flash cookie-parser csurf nodemailer
+4. Install nodemon to use to run server
+=> npm install -g nodemon
+5. Navigate to the folder containing app.js and run the server
+=> nodemon app.js
+6. You should get a message that the server has successfully startup.
+=> Server started on port 5000
+7. Browse to the address given below in your browser.
+=> http://localhost:5000/
+8. Voila! You can start using the application now.
 
-**To get started, you need to fork this repository to your own Github profile and work off that copy.**
-
-In this repository, there are the following files:
-1. README.md - this file
-2. project/ - the folder containing all the files that you require to get started
-3. project/index.html - the main HTML file containing the login form
-4. project/assets/ - the folder containing supporting assets such as images, JavaScript files, Cascading Style Sheets, etc. You shouldn’t need to make any changes to these but you are free to do so if you feel it might help your submission
-
-As part of the challenge, you need to implement an authentication mechanism with as many of the following features as possible. It is a non exhaustive list, so feel free to add or remove any of it as deemed necessary.
-
-1. Input sanitization and validation
-2. Password hashed
-3. Prevention of timing attacks
-4. Logging
-5. CSRF prevention
-6. Multi factor authentication
-7. Password reset / forget password mechanism
-8. Account lockout
-9. Cookie
-10. HTTPS
-11. Known password check
-
-You will have to create a simple binary (platform of your choice) to provide any server side functionality you may require. Please document steps to run the application. Your submission should be a link to your Github repository which you've already forked earlier together with the source code and binaries.
-
-Thank you!
+Items completed:
+- [x] Cookie
+- [x] Input sanitization and validation
+- [x] Password hashed
+- [x] Password reset / forget password mechanism
+- [x] CSRF prevention
+- [ ] Prevention of timing attacks
+- [ ] Logging
+- [ ] Multi factor authentication
+- [ ] Account lockout
+- [ ] HTTPS
+- [ ] Known password check

@@ -1,0 +1,25 @@
+
+<form action="/users/login" method="POST">
+  <h2 class="text-center">Log in</h2>
+  <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+  <div class="form-group" style="text-align:center">
+    <p style="color:red;">Invalid credentials.</p>
+  </div>
+  <div class="form-group">
+    <input id="email" type="text" class="form-control" placeholder="Email" required="required" name="email">
+  </div>
+  <div class="form-group">
+    <input id="password" type="password" class="form-control" placeholder="Password" required="required" name="password">
+  </div>
+  <div class="form-group">
+      <button type="submit" class="btn btn-primary btn-block">Log in</button>
+  </div>
+  <div class="clearfix">
+      <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
+      <a href="http://localhost:5000/users/forgot" class="pull-right">Forgot Password?</a>
+  </div>
+</form>
+<p class="text-center"><a href="http://localhost:5000/users/register">Create an Account</a></p>
+</div>
+</div>
+</div>
